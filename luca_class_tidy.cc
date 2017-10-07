@@ -120,6 +120,12 @@ public:
     file.close ();
   }				//fine metodo save
 
+  void printStatic ()
+    {
+      draw (0, 0, larg, alt, wall, true);
+      draw (3, 3, 10, 10, "@", true);
+    }
+
 } miamappa;			//fine classe con dichiarazione dell'oggetto miamappa usato in main
 
 
@@ -138,7 +144,7 @@ mv ()
 {
   bool running = true;
   bool scia = false;
-  printStatic ();
+  miamappa.printStatic ();
   do
     {
       printDinamic ();
@@ -246,12 +252,6 @@ printDinamic ()
     init = true;
 }
 
-void
-printStatic ()
-{
-  draw (0, 0, larg, alt, wall, true);
-  draw (3, 3, 10, 10, "@", true);
-}
 
 void
 coordPos ()
