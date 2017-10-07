@@ -70,7 +70,6 @@ class MapClass {
 	    getch();
 	}  //fine metodo
 	
-	
 	void load() { //metodo load
 	    int riempimento = 0;
 	    int ry=0;
